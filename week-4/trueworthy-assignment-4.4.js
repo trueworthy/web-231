@@ -34,7 +34,7 @@ function getStates(arr) {
     }
 }
 
-//function that acceptsa one dimentional array
+//function that accepts one dimentional array
 function getValue(x, value) 
 {
     if(x == value)
