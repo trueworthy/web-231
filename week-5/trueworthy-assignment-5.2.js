@@ -1,7 +1,3 @@
-var header = require('/Users/leatrueworthy/bu-webdev/web-231/trueworthy-header')
-console.log(header.display('Lea', 'Trueworthy', 'Assignment 5.2'));
-console.log('\n')
-
  /*
 ============================================
 ; Title: trueworthy-assignment-5.2.js
@@ -22,6 +18,12 @@ console.log('\n')
   Sushi
 */
 
+//header
+var header = require('/Users/leatrueworthy/bu-webdev/web-231/trueworthy-header')
+console.log(header.display('Lea', 'Trueworthy', 'Assignment 5.2'));
+console.log('\n')
+
+//function
 var food = ['Potatos', 'Grilled Cheese Sandwich', 'Pasta', 'Veggie Burger', 'Sushi']
 
 food.forEach(function(food) 
