@@ -2,13 +2,14 @@
 var header = require('/Users/leatrueworthy/bu-webdev/web-231/trueworthy-header')
 console.log(header.display('Lea', 'Trueworthy', 'Assignment 6.2'));
 console.log('\n')
+
 /*
 ============================================
-; Title:  Program Header
+; Title:  trueworthy-assignment-6.2.js
 ; Author: Professor Krasso 
 ; Date:   20 January 2019
 ; Modified By: Lea Trueworthy
-; Description: Exercise 6.2 - Exception Handling
+; Description: Demonstrates how to create a try/catch/finally block
 ;===========================================
 /*
 /*
