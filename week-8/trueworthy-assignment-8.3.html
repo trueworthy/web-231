@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trueworthy Assignment 8.3</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style type="text/css">
+	
+	
+	html {
+	font-family: "Roboto";
+	background-color:rgba(0,0,0,1.00);
+	}
+	
+	.topbar {
+		font-weight: 500;
+		background-color:red;
+		height: 50px;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	
+	.part1 {
+		color: white;
+		margin: 20px;
+	}
+	
+	table {
+	margin: 20px;
+    border-collapse: collapse;
+	color: white;
+  }
+  
+  td, th {
+	  font-weight: 300;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  th {
+    background-color: green;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: pink;
+  }
+	</style>
+
+</head>
+<body>
+	<div class="topbar"><h1><center>Top Bar</center></h1></div>
+
+<div class="part1">
+<h1>Futurama Ipsum</h1>
+<p>Leela, Bender, we're going grave robbing.
+Oh sure! Blame the wizards! Soon enough. Interesting. No, wait, the other thing: tedious. Good news, everyone! I've taught the toaster to feel love! If rubbin' frozen dirt in your crotch is wrong, hey I don't wanna be right.
+</p>
+
+<button>Toggle Me!</button>
+<br><br>
+	
+	</div>
+	
+<table>
+        <tr>
+          <th>ID</th>
+          <th>Type</th>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">1</td>
+          <td>Pear</td>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">2</td>
+          <td>Watermelon</td>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">3</td>
+          <td>Apple</td>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">4</td>
+          <td>Grapefruit</td>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">5</td>
+          <td>Dragonfruit</td>
+        </tr>
+      </table>	
+	
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+$(".fruitId").click(function (event) {
+            event.preventDefault();
+            var fruitId = $(this).text();
+            var fruitType = $(this).closest("td").next().text();
+            alert("{fruitId " + fruitId + ", fruitType: " + fruitType + "}");
+        });
+</script>
+	
+</body>
+</html>
+
